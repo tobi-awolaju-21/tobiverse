@@ -1,0 +1,173 @@
+import React, { useEffect } from 'react';
+import './assets/styles/class.css';
+import solidity from './assets/images/solidity.png';
+import rust from './assets/images/rust.png';
+import truffle from './assets/images/truffle.png';
+import ganache from './assets/images/ganache.png';
+import chainlink from './assets/images/chainlink.png';
+import java from './assets/images/java.png';
+import nodejs from './assets/images/nodejs.png';
+import reactjs from './assets/images/reactJs.png';
+import ipfs from './assets/images/ipfs.png';
+import web3js from './assets/images/web3js.png';
+import ethersjs from './assets/images/ethersJs.png';
+import opensea from './assets/images/opensea.jpg';
+import axil from './assets/images/axil.png';
+
+const Portfolio = () => {
+
+  useEffect(() => {
+    // Function to handle scroll events
+    const handleScroll = () => {
+      const viewportHeight = window.innerHeight / 3;
+      const totalHeight = document.body.scrollHeight * 0.55;
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+      let newOpacity = 1 - (scrollTop / viewportHeight);
+      newOpacity = Math.min(1, Math.max(0, newOpacity));
+      // document.querySelector('.headies').style.opacity = newOpacity;
+
+      newOpacity = (scrollTop / totalHeight) - 1;
+      newOpacity = Math.min(Math.max(0, newOpacity), 1);
+      document.querySelector('.footies').style.opacity = newOpacity;
+
+      newOpacity = (scrollTop / totalHeight * 20) - 1;
+      newOpacity = Math.min(Math.max(0, newOpacity), 1);
+      document.querySelector('.skills').style.opacity = newOpacity;
+
+      newOpacity = (scrollTop / totalHeight * 3) - 1;
+      newOpacity = Math.min(Math.max(0, newOpacity), 1);
+      document.querySelector('.experience').style.opacity = newOpacity;
+
+      newOpacity = (scrollTop / totalHeight * 2) - 1;
+      newOpacity = Math.min(Math.max(0, newOpacity), 1);
+      document.querySelector('.projects').style.opacity = newOpacity;
+    };
+
+    // Add event listener to the window object
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up event listener when the component is unmounted
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+
+  
+
+
+  return (
+    <div>
+      <div className="splash">
+        <h1 style={{ fontFamily: 'BagelFatOne' }}>I'm Tobi Awolaju</h1>
+      </div>
+
+      <p style={{ padding: '10vw', paddingBottom: 0 }}>
+        I,m a software engineer and an Electronics Engineering Major
+        My focus is Digital Communications, and
+        I specialize in integrating Blockchain into diverse applications
+        like IoT, ROS, web, and mobile apps.
+      </p>
+
+      <div className="skills">
+        <h3>👾Skills I abuse---</h3>
+
+        <div className="grid-container">
+          {[
+            { src: solidity, label: 'Solidity' },
+            { src: rust, label: 'Rust' },
+            { src: truffle, label: 'truffle' },
+            { src: ganache, label: 'Ganache' },
+            { src: chainlink, label: 'chainlink' },
+            { src: java, label: 'Java' },
+            { src: nodejs, label: 'NodeJs' },
+            { src: reactjs, label: 'Reactjs' },
+            { src: ipfs, label: 'IPFS' },
+            { src: web3js, label: 'web3js' },
+            { src: ethersjs, label: 'ethersJs' }
+          ].map((skill, index) => (
+            <div className="grid-item" key={index}>
+              <img className="pfp4" src={skill.src} alt={skill.label} />
+              <p>{skill.label}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="experience">
+        <h3>👾Experience</h3>
+        <ul>
+          <li>8 months of specialized experience in payment systems, on-chain wallet development, and project optimization</li>
+          <li>2 years of robust software engineering expertise</li>
+          <li>Proven backend proficiency in low-level languages: Rust,C</li>
+          <li>Extensive blockchain engineering experience across Layer-1, Layer-2, and PC provider wallet</li>
+          <li>Proficient in Java with a deep understanding of JVM, IO, multi-threading, concurrency, and networking and EVM</li>
+        </ul>
+      </div>
+
+      <div className="projects">
+        <h3>👾Projects ---</h3>
+
+        {[
+          {
+            title: 'Basquiat',
+            imgSrc: opensea,
+            description: 'A P2B wallet for direct trade to and from Nigeria local banks and Ethereum blockchain',
+            sourceCode: 'Sourcecode',
+            tryApp: 'Try App'
+          },
+          {
+            title: 'Footclan (work in progress)',
+            imgSrc: axil,
+            description: 'An esport platform that allows you to place eth weiger on mobile multiplayer games in custom server matches. currently supports codm, codm warzone, pubg, brawalla,farlight',
+            sourceCode: 'Sourcecode',
+            tryApp: 'Try App'
+          },
+          {
+            title: 'Footclan (work in progress)',
+            imgSrc: axil,
+            description: 'An esport platform that allows you to place eth weiger on mobile multiplayer games in custom server matches. currently supports codm, codm warzone, pubg, brawalla,farlight',
+            sourceCode: 'Sourcecode',
+            tryApp: 'Try App'
+          },
+          {
+            title: 'Footclan (work in progress)',
+            imgSrc: axil,
+            description: 'An esport platform that allows you to place eth weiger on mobile multiplayer games in custom server matches. currently supports codm, codm warzone, pubg, brawalla,farlight',
+            sourceCode: 'Sourcecode',
+            tryApp: 'Try App'
+          }
+        ].map((project, index) => (
+          <div className="box" key={index}>
+            <h4 style={{ textAlign: 'left' }}>{project.title}</h4>
+            <img className="projectimg" src={project.imgSrc} alt={project.title} />
+            <p style={{ textAlign: 'left', opacity: 0.7 }}>{project.description}</p>
+            <button className="sourceb">{project.sourceCode}</button>
+            <button className="tryb">{project.tryApp}</button>
+          </div>
+        ))}
+
+        <p style={{ width: '100%', textAlign: 'right' }}>
+          <a href="https://github.com/tobi-awolaju-21" target="_blank" rel="noopener noreferrer">View more of my projects (25) on Github</a>
+        </p>
+      </div>
+
+      <div className="contact">
+        <h3>👾Get in touch ---</h3>
+
+        <div className="contact_mom">
+          <h2>I am open to all forms of communication</h2>
+
+
+          <div class="footies">
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Portfolio;
