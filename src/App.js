@@ -107,8 +107,8 @@ Web3 innovations.
         <div className="grid-container">
           {[
             { src: AssemblyLanguage, label: 'Assembly Language' },
-            { src: rust, label: 'Rust' },
             { src: clang, label: 'c/c++' },
+            { src: rust, label: 'Rust' },
             { src: solidity, label: 'Solidity' },
             { src: truffle, label: 'truffle' },
             { src: ganache, label: 'Ganache' },
