@@ -69,7 +69,7 @@ const App = () => {
         <button onClick={scrollToAbout} className='button_more'>Know more</button>
       </div>
 
-      
+
       <section className='abouts' ref={aboutRef}>
       <div style={{ display: 'flex' }}>
       <img className='unnamed' src={unnamed} alt="Profile" />
@@ -89,7 +89,7 @@ const App = () => {
       
 
       <div className="skills" style={{ opacity: 0, transition: 'opacity 0.5s' }} ref={(el) => (sections.current[1] = el)}>
-        <h3>👾Languages and Tools I abuse---</h3>
+        <h3>👾I  abuse---</h3>
         <div className="grid-container">
           {[
             { src: AssemblyLanguage, label: 'Assembly Language' },
