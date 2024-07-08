@@ -16,6 +16,8 @@ import opensea from './assets/images/opensea.jpg';
 import axil from './assets/images/axil.png';
 import unnamed from './assets/images/unnamed.jpg'
 import AssemblyLanguage from './assets/images/asm.jpg'
+import clang from './assets/images/c.png'
+import mongodb from './assets/images/mongodb.png'
 
 const Portfolio = () => {
 
@@ -105,16 +107,16 @@ Web3 innovations.
         <div className="grid-container">
           {[
             { src: AssemblyLanguage, label: 'Assembly Language' },
-            { src: solidity, label: 'Solidity' },
             { src: rust, label: 'Rust' },
+            { src: clang, label: 'c/c++' },
+            { src: solidity, label: 'Solidity' },
             { src: truffle, label: 'truffle' },
             { src: ganache, label: 'Ganache' },
-            { src: chainlink, label: 'chainlink' },
+            { src: mongodb, label: 'mongo DB' },
             { src: java, label: 'Java' },
             { src: nodejs, label: 'NodeJs' },
             { src: reactjs, label: 'Reactjs' },
             { src: ipfs, label: 'IPFS' },
-            { src: web3js, label: 'web3js' },
             { src: ethersjs, label: 'ethersJs' }
           ].map((skill, index) => (
             <div className="grid-item" key={index}>
@@ -131,7 +133,7 @@ Web3 innovations.
           <li>Lead Software engineer for an open source compliler for a DePi project</li>
           <li>Lead software engineer as slides a campus social app</li>
           <li>Lead researcher on Amoung us turning test</li>
-          
+
           <li>Extensive blockchain engineering experience across Layer-1, Layer-2, and PC provider wallet</li>
           <li>Proficient in Java with a deep understanding of JVM, IO, multi-threading, concurrency, and networking and EVM</li>
         </ul>
