@@ -60,7 +60,14 @@ const Portfolio = () => {
   return (
     <div>
       <div className="splash">
-        <h1 style={{ fontFamily: 'BagelFatOne' }}>I'm Tobi Awolaju</h1>
+
+      <h1 style={{ fontFamily: 'BagelFatOne' }}>
+  Hello, my name is <span style={{ color: 'white' }}>Tobi Awolaju.</span>
+</h1>
+
+<h1 style={{ fontFamily: 'BagelFatOne' }}>I'm a software engineer.</h1>
+
+   <button className='button_more'>Know more</button>
       </div>
 
       <p style={{ padding: '10vw', paddingBottom: 0 }}>
