@@ -15,6 +15,8 @@ import ethersjs from './assets/images/ethersJs.png';
 import opensea from './assets/images/opensea.jpg';
 import axil from './assets/images/axil.png';
 
+import unnamed from './assets/images/unnamed.jpg'
+
 const Portfolio = () => {
 
   useEffect(() => {
@@ -76,6 +78,7 @@ const Portfolio = () => {
       </div>
 
       <section ref={aboutRef}>
+      <img className='unnamed'  src= {unnamed}></img>
       <p className='abouts' style={{ padding: '10vw', paddingBottom: 0 }}>
         I,m a software engineer and an Electronics Engineering Major
         My focus is Digital Communications, and

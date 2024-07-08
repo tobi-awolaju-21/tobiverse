@@ -30,6 +30,8 @@ body {
     border-radius: 0px;
 }
 
+
+
 h1 {
     font-family: "CalibreSemibold";
     font-size: clamp(1.5rem, 10vw, 2rem);
@@ -105,8 +107,13 @@ li {
     transform: translateY(-6px);
 }
 
+.unnamed{
+    padding: 20vw;
+    padding-bottom: 0px;
+    width: 60vw;
+}
 .abouts{
-  height: 50vh;
+  height: auto;
   font-family: sans-serif;
 }
 
