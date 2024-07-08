@@ -10,7 +10,7 @@ import nodejs from './assets/images/nodejs.png';
 import reactjs from './assets/images/reactJs.png';
 import ipfs from './assets/images/ipfs.png';
 import ethersjs from './assets/images/ethersJs.png';
-import axil from './assets/images/axil.png';
+import axil from './assets/images/axii.webp';
 import unnamed from './assets/images/unnamed.jpg'
 import AssemblyLanguage from './assets/images/asm.jpg'
 import clang from './assets/images/c.png'
@@ -128,36 +128,43 @@ const App = () => {
             title: 'CompilerX',
             imgSrc: axil,
             description: 'A high-performance compiler designed for modern programming languages, focusing on optimization and speed.',
-            sourceCode: 'Sourcecode',
-            tryApp: 'Try App'
+            sourceCode: 'See Source Code',
+            link: 'http://www.goggle.com'
           },
           {
             title: 'LangInter',
             imgSrc: axil,
             description: 'A versatile language interpreter supporting multiple scripting languages, aimed at providing a seamless development experience.',
-            sourceCode: 'Sourcecode',
-            tryApp: 'Try App'
+            sourceCode: 'See Source Code',
+            link: 'http://www.goggle.com'
           },
           {
             title: 'SearchPro',
             imgSrc: axil,
             description: 'An advanced search engine designed to deliver precise and fast search results using cutting-edge algorithms.',
-            sourceCode: 'Sourcecode',
-            tryApp: 'Try App'
+            sourceCode: 'See Source Code',
+            link: 'http://www.goggle.com'
           },
           {
-            title: 'Web3DApp',
+            title: 'NFTMarketplace',
             imgSrc: axil,
-            description: 'A decentralized application built on blockchain technology to enhance transparency and security in transactions.',
-            sourceCode: 'Sourcecode',
-            tryApp: 'Try App'
+            description: 'A marketplace for creating, buying, and selling NFTs (non-fungible tokens) with features such as auctions, royalties, and cross-chain interoperability.',
+            sourceCode: 'See Source Code',
+            link: 'http://www.goggle.com'
           },
           {
-            title: 'AIMLProject',
+            title: 'DAOPlatform',
             imgSrc: axil,
-            description: 'An AI/ML project focused on predictive analytics with an accompanying research paper detailing the methodologies and results.',
-            sourceCode: 'Sourcecode',
-            tryApp: 'Try App'
+            description: 'A platform for creating and managing Decentralized Autonomous Organizations (DAOs) with voting mechanisms, treasury management, and proposal tracking.',
+            sourceCode: 'See Source Code',
+            link: 'http://www.goggle.com'
+          },
+          {
+            title: 'BlockchainIdentity',
+            imgSrc: axil,
+            description: 'A decentralized identity verification system leveraging blockchain to provide secure and verifiable digital identities.',
+            sourceCode: 'See Source Code',
+            link: 'http://www.goggle.com'
           }
         ].map((project, index) => (
           <div className="box" key={index}>
@@ -165,7 +172,6 @@ const App = () => {
             <img className="projectimg" src={project.imgSrc} alt={project.title} />
             <p style={{ textAlign: 'left', opacity: 0.7 }}>{project.description}</p>
             <button className="sourceb">{project.sourceCode}</button>
-            <button className="tryb">{project.tryApp}</button>
           </div>
         ))}
 

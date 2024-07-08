@@ -130,7 +130,7 @@ li {
 .box{
     margin: 0px;
     margin-bottom: 50px;
-    text-align: right;
+    padding: 20px;
 }
 .projectimg{
     width: 100%;
@@ -139,22 +139,14 @@ li {
 .sourceb {
     border: none;
     border-radius: 10px;
-    background-color: #d4d6de;
+    background-color: #ffffff;
     color: #000000;
     padding: 8px;
     width: auto;
+    border-radius: 0px;
+    border: 3px solid #1338bc
 }
 
-
-.tryb {
-    border: none;
-    border-radius: 10px;
-    background-color: #1338bc;
-    color: #ffffff;
-    padding: 8px;
-    margin: 5px;
-    margin-right:0px;
-}
 
 .experience {
     opacity: 0%;
