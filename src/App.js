@@ -183,9 +183,7 @@ const App = () => {
           </div>
         ))}
 
-        <p style={{ width: '100%', textAlign: 'right' }}>
-          <a href="https://github.com/tobi-awolaju-21" target="_blank" rel="noopener noreferrer">View more of my projects (25) on Github</a>
-        </p>
+        
       </div>
 
       <div className="contact" style={{ opacity: 0, transition: 'opacity 0.5s' }} ref={(el) => (sections.current[4] = el)}>
