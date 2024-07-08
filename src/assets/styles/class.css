@@ -108,8 +108,9 @@ li {
 }
 
 .unnamed{
+    padding: 20px;
     border-radius:100%;
-    width: 60vw;
+    width: 20vw;
 }
 .abouts{
   height: auto;
