@@ -1,4 +1,4 @@
-import React, { useEffect,useRef } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 
 import './assets/styles/class.css';
 import solidity from './assets/images/solidity.png';
@@ -19,6 +19,7 @@ import mongodb from './assets/images/mongodb.png'
 
 
 const App = () => {
+  const [loading, setLoading] = useState(true);
   const aboutRef = useRef(null);
   const sections = useRef([]);
 
@@ -26,7 +27,12 @@ const App = () => {
     aboutRef.current.scrollIntoView({ behavior: 'smooth' });
   };
 
+
   useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 5000);
+
     // Callback function to handle intersection changes
     const handleIntersection = (entries) => {
       entries.forEach(entry => {
@@ -58,12 +64,19 @@ const App = () => {
 
   return (
     <div>
-      <div className="splash">
-        <h1 style={{ fontFamily: 'BagelFatOne' }}>
-          Hello, my name is <span style={{ color: 'white' }}>Tobi Awolaju.</span>
-        </h1>
-        <h1 style={{ fontFamily: 'BagelFatOne' }}>I'm a software engineer.</h1>
-        <button onClick={scrollToAbout} className='button_more'>Know more</button>
+    
+    <div className={`splash ${loading ? 'loading' : ''}`}>
+        {loading ? (
+          <div className="glitch">page</div>
+        ) : (
+          <>
+            <h1 style={{ fontFamily: 'BagelFatOne' }}>
+              Hello, my name is <span style={{ color: 'white' }}>Tobi Awolaju.</span>
+            </h1>
+            <h1 style={{ fontFamily: 'BagelFatOne' }}>I'm a software engineer.</h1>
+            <button onClick={scrollToAbout} className='button_more'>Know more</button>
+          </>
+        )}
       </div>
 
 

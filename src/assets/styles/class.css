@@ -80,13 +80,107 @@ li {
 }
 
 .splash {
-    align-content: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    justify-content: center;
     height: 100vh;
-    background-color: #1338bc;
+    overflow: hidden;
+    color: white;
+    font-family: 'BagelFatOne';
+  }
+  
+  .splash::before,
+  .splash::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-}
-
+    height: 100%;
+    background-color: #1338bc;
+    z-index: -1;
+    transition: background-color 2s;
+  }
+  
+  .splash.loading::after {
+    background-color: rgb(0, 0, 0); /* Change to desired color after 2 seconds */
+  }
+  
+  .glitch {
+    position: relative;
+    font-size: 2rem;
+    color: white;
+    animation: glitch 2s infinite;
+  }
+  
+  .glitch::before, .glitch::after {
+    content: 'Page not found';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    animation: glitch 2s infinite;
+  }
+  
+  .glitch::before {
+    left: 2px;
+    text-shadow: -2px 0 red;
+    clip: rect(24px, 550px, 90px, 0);
+    animation: glitch 2s infinite reverse;
+  }
+  
+  .glitch::after {
+    left: -2px;
+    text-shadow: -2px 0 blue;
+    clip: rect(85px, 550px, 140px, 0);
+    animation: glitch 2s infinite reverse;
+  }
+  
+  @keyframes glitch {
+    0% {
+      clip: rect(0, 900px, 0, 0);
+    }
+    10% {
+      clip: rect(25px, 900px, 44px, 0);
+    }
+    20% {
+      clip: rect(85px, 900px, 140px, 0);
+    }
+    30% {
+      clip: rect(60px, 900px, 80px, 0);
+    }
+    40% {
+      clip: rect(65px, 900px, 100px, 0);
+    }
+    50% {
+      clip: rect(20px, 900px, 45px, 0);
+    }
+    60% {
+      clip: rect(40px, 900px, 75px, 0);
+    }
+    70% {
+      clip: rect(70px, 900px, 85px, 0);
+    }
+    80% {
+      clip: rect(50px, 900px, 70px, 0);
+    }
+    90% {
+      clip: rect(25px, 900px, 45px, 0);
+    }
+    100% {
+      clip: rect(0, 900px, 0, 0);
+    }
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
 
 
 .pfp {
