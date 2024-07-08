@@ -14,8 +14,8 @@ import web3js from './assets/images/web3js.png';
 import ethersjs from './assets/images/ethersJs.png';
 import opensea from './assets/images/opensea.jpg';
 import axil from './assets/images/axil.png';
-
 import unnamed from './assets/images/unnamed.jpg'
+import AssemblyLanguage from './assets/images/asm.jpg'
 
 const Portfolio = () => {
 
@@ -100,10 +100,11 @@ Web3 innovations.
     
 
       <div className="skills">
-        <h3>👾Skills I abuse---</h3>
+        <h3>👾Languages and Tools I abuse---</h3>
 
         <div className="grid-container">
           {[
+            { src: AssemblyLanguage, label: 'Assembly Language' },
             { src: solidity, label: 'Solidity' },
             { src: rust, label: 'Rust' },
             { src: truffle, label: 'truffle' },
@@ -186,7 +187,7 @@ Web3 innovations.
         <h3>👾Get in touch ---</h3>
 
         <div className="contact_mom">
-          <h2>I am open to all forms of communication</h2>
+          <h2>Message me on Linkedin</h2>
 
 
           <div class="footies">
