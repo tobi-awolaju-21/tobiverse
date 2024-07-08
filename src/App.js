@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react';
+import React, { useEffect,useRef } from 'react';
+
 import './assets/styles/class.css';
 import solidity from './assets/images/solidity.png';
 import rust from './assets/images/rust.png';
@@ -55,7 +56,11 @@ const Portfolio = () => {
 
 
   
+  const aboutRef = useRef(null);
 
+  const scrollToAbout = () => {
+    aboutRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
     <div>
@@ -67,8 +72,19 @@ const Portfolio = () => {
 
 <h1 style={{ fontFamily: 'BagelFatOne' }}>I'm a software engineer.</h1>
 
-   <button className='button_more'>Know more</button>
+   <button onClick={scrollToAbout} className='button_more'>Know more</button>
       </div>
+
+      <section style={{ height: '800px' }}> {/* Space to allow scrolling */}
+        {/* Additional content here */}
+      </section>
+
+
+      <section ref={aboutRef} style={{ padding: '20px', background: '#f0f0f0' }}>
+        <h2>About Me</h2>
+        <p>This is the about section. Here you can put information about yourself.</p>
+        {/* More details about you */}
+      </section>
 
       <p style={{ padding: '10vw', paddingBottom: 0 }}>
         I,m a software engineer and an Electronics Engineering Major
