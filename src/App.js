@@ -128,9 +128,10 @@ Web3 innovations.
       <div className="experience">
         <h3>👾Experience</h3>
         <ul>
-          <li>8 months of specialized experience in payment systems, on-chain wallet development, and project optimization</li>
-          <li>2 years of robust software engineering expertise</li>
-          <li>Proven backend proficiency in low-level languages: Rust,C</li>
+          <li>Lead Software engineer for an open source compliler for a DePi project</li>
+          <li>Lead software engineer as slides a campus social app</li>
+          <li>Lead researcher on Amoung us turning test</li>
+          
           <li>Extensive blockchain engineering experience across Layer-1, Layer-2, and PC provider wallet</li>
           <li>Proficient in Java with a deep understanding of JVM, IO, multi-threading, concurrency, and networking and EVM</li>
         </ul>
