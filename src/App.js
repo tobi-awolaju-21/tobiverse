@@ -75,23 +75,16 @@ const Portfolio = () => {
    <button onClick={scrollToAbout} className='button_more'>Know more</button>
       </div>
 
-      <section style={{ height: '800px' }}> {/* Space to allow scrolling */}
-        {/* Additional content here */}
-      </section>
-
-
-      <section ref={aboutRef} style={{ padding: '20px', background: '#f0f0f0' }}>
-        <h2>About Me</h2>
-        <p>This is the about section. Here you can put information about yourself.</p>
-        {/* More details about you */}
-      </section>
-
-      <p style={{ padding: '10vw', paddingBottom: 0 }}>
+      <section ref={aboutRef}>
+      <p className='abouts' style={{ padding: '10vw', paddingBottom: 0 }}>
         I,m a software engineer and an Electronics Engineering Major
         My focus is Digital Communications, and
         I specialize in integrating Blockchain into diverse applications
         like IoT, ROS, web, and mobile apps.
       </p>
+      </section>
+
+    
 
       <div className="skills">
         <h3>👾Skills I abuse---</h3>
