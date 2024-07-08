@@ -112,11 +112,12 @@ li {
 .unnamed{
     padding-right: 15px;
     border-radius:90%;
-    width: 20vw;
-    height: 20vw;
+    width: 70px;
+    height: 70px;
 }
 .abouts{
-    padding: 10px;
+    margin-top: 20px;
+  padding: 10px;
   height: auto;
   font-family: sans-serif;
   display: flex;

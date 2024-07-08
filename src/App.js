@@ -80,10 +80,7 @@ const Portfolio = () => {
       <section className='abouts' ref={aboutRef}>
       <img className='unnamed'  src= {unnamed}></img>
       <p>
-        I,m a software engineer and an Electronics Engineering Major
-        My focus is Digital Communications, and
-        I specialize in integrating Blockchain into diverse applications
-        like IoT, ROS, web, and mobile apps.
+  web3 software engineer | Electronics engineering major.
       </p>
       </section>
 
