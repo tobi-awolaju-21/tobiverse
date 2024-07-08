@@ -67,12 +67,11 @@ h4 {
 
 p {
     color: #000000c0;
-    padding: 10px;
-    padding-right: 20px;
     margin: 0px;
     margin-top: 15px;
     margin-bottom:10px;
-}
+} 
+
 li {
     color: #000000e4;
     margin: 0px;
@@ -111,14 +110,13 @@ li {
 }
 
 .unnamed{
-    margin-top: 15px;
-    padding: 10px;
-    padding-left:30px;
+    padding-right: 15px;
     border-radius:90%;
     width: 20vw;
     height: 20vw;
 }
 .abouts{
+    padding: 10px;
   height: auto;
   font-family: sans-serif;
   display: flex;
