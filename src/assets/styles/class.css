@@ -80,17 +80,9 @@ li {
     text-align: center;
     height: 100vh;
     background-color: #1338bc;
-    
+    width: 100%;
 }
 
-.headies {
-    color: rgb(255, 255, 255);
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    opacity: 1;
-    transition: opacity 0.5s ease; /* Smooth transition for opacity change */
-}
 
 
 .pfp {
