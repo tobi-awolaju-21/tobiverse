@@ -67,7 +67,7 @@ const App = () => {
     
     <div className={`splash ${loading ? 'loading' : ''}`}>
         {loading ? (
-          <div className="glitch">page</div>
+          <div className="glitch"></div>
         ) : (
           <>
             <h1 style={{ fontFamily: 'BagelFatOne' }}>
