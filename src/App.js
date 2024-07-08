@@ -82,7 +82,8 @@ const Portfolio = () => {
       <section className='abouts' ref={aboutRef}>
       <div style={{ display: 'flex' }}>
       <img className='unnamed' src={unnamed} alt="Profile" />
-      <p>
+      <p style={{ fontWeight: 'bold' }}>
+
         Web3 software engineer | Electronics engineering major.
       </p>
     </div>
