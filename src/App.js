@@ -19,66 +19,57 @@ import AssemblyLanguage from './assets/images/asm.jpg'
 import clang from './assets/images/c.png'
 import mongodb from './assets/images/mongodb.png'
 
-const Portfolio = () => {
-
-  useEffect(() => {
-    // Function to handle scroll events
-    const handleScroll = () => {
-      const viewportHeight = window.innerHeight / 3;
-      const totalHeight = document.body.scrollHeight * 0.55;
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-      let newOpacity = 1 - (scrollTop / viewportHeight);
-      newOpacity = Math.min(1, Math.max(0, newOpacity));
-      // document.querySelector('.headies').style.opacity = newOpacity;
-
-      newOpacity = (scrollTop / totalHeight) - 1;
-      newOpacity = Math.min(Math.max(0, newOpacity), 1);
-      document.querySelector('.footies').style.opacity = newOpacity;
-
-      newOpacity = (scrollTop / totalHeight * 20) - 1;
-      newOpacity = Math.min(Math.max(0, newOpacity), 1);
-      document.querySelector('.skills').style.opacity = newOpacity;
-
-      newOpacity = (scrollTop / totalHeight * 3) - 1;
-      newOpacity = Math.min(Math.max(0, newOpacity), 1);
-      document.querySelector('.experience').style.opacity = newOpacity;
-
-      newOpacity = (scrollTop / totalHeight * 2) - 1;
-      newOpacity = Math.min(Math.max(0, newOpacity), 1);
-      document.querySelector('.projects').style.opacity = newOpacity;
-    };
-
-    // Add event listener to the window object
-    window.addEventListener('scroll', handleScroll);
-
-    // Clean up event listener when the component is unmounted
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
 
 
-  
+const App = () => {
   const aboutRef = useRef(null);
+  const sections = useRef([]);
 
   const scrollToAbout = () => {
     aboutRef.current.scrollIntoView({ behavior: 'smooth' });
   };
 
+  useEffect(() => {
+    // Callback function to handle intersection changes
+    const handleIntersection = (entries) => {
+      entries.forEach(entry => {
+        entry.target.style.opacity = entry.isIntersecting ? 1 : 0;
+      });
+    };
+
+    // Create an intersection observer
+    const observer = new IntersectionObserver(handleIntersection, {
+      threshold: 0.1 // Adjust threshold as needed
+    });
+
+    // Observe each section
+    sections.current.forEach(section => {
+      if (section) {
+        observer.observe(section);
+      }
+    });
+
+    // Clean up observer when the component is unmounted
+    return () => {
+      sections.current.forEach(section => {
+        if (section) {
+          observer.unobserve(section);
+        }
+      });
+    };
+  }, []);
+
   return (
     <div>
       <div className="splash">
-
-      <h1 style={{ fontFamily: 'BagelFatOne' }}>
-  Hello, my name is <span style={{ color: 'white' }}>Tobi Awolaju.</span>
-</h1>
-
-<h1 style={{ fontFamily: 'BagelFatOne' }}>I'm a software engineer.</h1>
-
-   <button onClick={scrollToAbout} className='button_more'>Know more</button>
+        <h1 style={{ fontFamily: 'BagelFatOne' }}>
+          Hello, my name is <span style={{ color: 'white' }}>Tobi Awolaju.</span>
+        </h1>
+        <h1 style={{ fontFamily: 'BagelFatOne' }}>I'm a software engineer.</h1>
+        <button onClick={scrollToAbout} className='button_more'>Know more</button>
       </div>
 
+      
       <section className='abouts' ref={aboutRef}>
       <div style={{ display: 'flex' }}>
       <img className='unnamed' src={unnamed} alt="Profile" />
@@ -88,35 +79,29 @@ const Portfolio = () => {
       </p>
     </div>
       <p style={{width:'90vw'}}>
-      I'm Tobi Awolaju (Black Tea) 
-
-Innovative Web3 Software Engineer with a strong 
-foundation in Electronics Engineering. Passionate about leveraging
- blockchain technology to create decentralized applications and solutions. Experienced
-  in developing smart contracts, blockchain protocols, and integrating Web3 functionalities. Adept at 
-bridging the gap between 
-traditional electronics engineering principles and cutting-edge 
-Web3 innovations.
+      I'm Tobi Awolaju A software engineer witha a keen for clean and standard builds
+      I hava a strong bacground in Engineering, Electronics engineering major
+      and a strong desire to understand the working princeples of 
+      every system that intrests me down to the first bit.
       </p>
       </section>
 
-    
+      
 
-      <div className="skills">
+      <div className="skills" style={{ opacity: 0, transition: 'opacity 0.5s' }} ref={(el) => (sections.current[1] = el)}>
         <h3>👾Languages and Tools I abuse---</h3>
-
         <div className="grid-container">
           {[
             { src: AssemblyLanguage, label: 'Assembly Language' },
             { src: clang, label: 'c/c++' },
             { src: rust, label: 'Rust' },
             { src: solidity, label: 'Solidity' },
+            { src: nodejs, label: 'NodeJs' },
+            { src: java, label: 'Java' },
+            { src: reactjs, label: 'Reactjs' },
             { src: truffle, label: 'truffle' },
             { src: ganache, label: 'Ganache' },
             { src: mongodb, label: 'mongo DB' },
-            { src: java, label: 'Java' },
-            { src: nodejs, label: 'NodeJs' },
-            { src: reactjs, label: 'Reactjs' },
             { src: ipfs, label: 'IPFS' },
             { src: ethersjs, label: 'ethersJs' }
           ].map((skill, index) => (
@@ -128,21 +113,19 @@ Web3 innovations.
         </div>
       </div>
 
-      <div className="experience">
+      <div className="experience" style={{ opacity: 0, transition: 'opacity 0.5s' }} ref={(el) => (sections.current[2] = el)}>
         <h3>👾Experience</h3>
         <ul>
           <li>Lead Software engineer for an open source compliler for a DePi project</li>
           <li>Lead software engineer as slides a campus social app</li>
-          <li>Lead researcher on Amoung us turning test</li>
-
+          <li>Lead researcher on Among us turning test</li>
           <li>Extensive blockchain engineering experience across Layer-1, Layer-2, and PC provider wallet</li>
           <li>Proficient in Java with a deep understanding of JVM, IO, multi-threading, concurrency, and networking and EVM</li>
         </ul>
       </div>
 
-      <div className="projects">
+      <div className="projects" style={{ opacity: 0, transition: 'opacity 0.5s' }} ref={(el) => (sections.current[3] = el)}>
         <h3>👾Projects ---</h3>
-
         {[
           {
             title: 'Basquiat',
@@ -187,21 +170,23 @@ Web3 innovations.
         </p>
       </div>
 
-      <div className="contact">
+      <div className="contact" style={{ opacity: 0, transition: 'opacity 0.5s' }} ref={(el) => (sections.current[4] = el)}>
         <h3>👾Get in touch ---</h3>
-
         <div className="contact_mom">
-          <h2>Message me on Linkedin</h2>
-
-
-          <div class="footies">
-          </div>
-
-
+          <h2>Message me on LinkedIn</h2>
+          <div className="footies"></div>
         </div>
       </div>
     </div>
   );
 };
 
-export default Portfolio;
+export default App;
+
+
+
+
+
+       
+
+   
