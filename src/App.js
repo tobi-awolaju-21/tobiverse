@@ -125,20 +125,6 @@ const App = () => {
         <h3>👾Projects ---</h3>
         {[
           {
-            title: 'Basquiat',
-            imgSrc: axil,
-            description: 'A P2B wallet for direct trade to and from Nigerian local banks and Ethereum blockchain',
-            sourceCode: 'Sourcecode',
-            tryApp: 'Try App'
-          },
-          {
-            title: 'Footclan (work in progress)',
-            imgSrc: axil,
-            description: 'An esport platform that allows you to place ETH wager on mobile multiplayer games in custom server matches. Currently supports CODM, CODM Warzone, PUBG, Brawlhalla, Farlight',
-            sourceCode: 'Sourcecode',
-            tryApp: 'Try App'
-          },
-          {
             title: 'CompilerX',
             imgSrc: axil,
             description: 'A high-performance compiler designed for modern programming languages, focusing on optimization and speed.',
