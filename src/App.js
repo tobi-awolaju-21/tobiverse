@@ -79,7 +79,7 @@ const Portfolio = () => {
 
       <section className='abouts' ref={aboutRef}>
       <img className='unnamed'  src= {unnamed}></img>
-      <p  style={{ padding: '10vw', paddingBottom: 0 }}>
+      <p>
         I,m a software engineer and an Electronics Engineering Major
         My focus is Digital Communications, and
         I specialize in integrating Blockchain into diverse applications

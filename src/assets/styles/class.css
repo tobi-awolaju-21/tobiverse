@@ -67,6 +67,7 @@ h4 {
 
 p {
     color: #000000c0;
+    padding: 10px;
     margin: 0px;
     margin-bottom:10px;
 }
@@ -108,10 +109,11 @@ li {
 }
 
 .unnamed{
-    padding: 20px;
+    padding: 10px;
     padding-right: 0px;
     border-radius:90%;
     width: 20vw;
+    height: 20vw;
 }
 .abouts{
   height: auto;
