@@ -100,81 +100,31 @@ li {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #000000;
+    background-color: #48ac5f;
     z-index: -1;
     transition: background-color 2s;
   }
   
   .splash.loading::after {
-    background-color: #000000; /* Change to desired color after 2 seconds */
+    background-color: #48ac5f; /* Change to desired color after 2 seconds */
   }
   
   .glitch {
     position: relative;
     font-size: 2rem;
-    color: #3b3b3b;
-    animation: glitch 2s infinite;
+    color: #eaff00;
   }
   
   .glitch::before, .glitch::after {
-    content:'error 404' ;
+    content:'you found me' ;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -25vh;
+    left: -25vw;
     width: 100%;
     height: 100%;
-    background: inherit;
-    animation: glitch 2s infinite;
   }
   
-  .glitch::before {
-    left: 2px;
-    clip: rect(24px, 550px, 90px, 0);
-    animation: glitch 2s infinite reverse;
-  }
-  
-  .glitch::after {
-    left: -2px;
-    clip: rect(85px, 550px, 140px, 0);
-    animation: glitch 2s infinite reverse;
-  }
-  
-  @keyframes glitch {
-    0% {
-      clip: rect(0, 900px, 0, 0);
-    }
-    10% {
-      clip: rect(25px, 900px, 44px, 0);
-    }
-    20% {
-      clip: rect(85px, 900px, 140px, 0);
-    }
-    30% {
-      clip: rect(60px, 900px, 80px, 0);
-    }
-    40% {
-      clip: rect(65px, 900px, 100px, 0);
-    }
-    50% {
-      clip: rect(20px, 900px, 45px, 0);
-    }
-    60% {
-      clip: rect(40px, 900px, 75px, 0);
-    }
-    70% {
-      clip: rect(70px, 900px, 85px, 0);
-    }
-    80% {
-      clip: rect(50px, 900px, 70px, 0);
-    }
-    90% {
-      clip: rect(25px, 900px, 45px, 0);
-    }
-    100% {
-      clip: rect(0, 900px, 0, 0);
-    }
-  }
-  
+ 
   .hidden {
     display: none;
   }
