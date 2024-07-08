@@ -77,9 +77,9 @@ const Portfolio = () => {
    <button onClick={scrollToAbout} className='button_more'>Know more</button>
       </div>
 
-      <section ref={aboutRef}>
+      <section className='abouts' ref={aboutRef}>
       <img className='unnamed'  src= {unnamed}></img>
-      <p className='abouts' style={{ padding: '10vw', paddingBottom: 0 }}>
+      <p  style={{ padding: '10vw', paddingBottom: 0 }}>
         I,m a software engineer and an Electronics Engineering Major
         My focus is Digital Communications, and
         I specialize in integrating Blockchain into diverse applications

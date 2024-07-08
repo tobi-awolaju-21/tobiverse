@@ -109,12 +109,14 @@ li {
 
 .unnamed{
     padding: 20px;
-    border-radius:100%;
+    padding-right: 0px;
+    border-radius:90%;
     width: 20vw;
 }
 .abouts{
   height: auto;
   font-family: sans-serif;
+  display: flex;
 }
 
 .projects {   
