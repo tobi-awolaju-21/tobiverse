@@ -5,14 +5,11 @@ import solidity from './assets/images/solidity.png';
 import rust from './assets/images/rust.png';
 import truffle from './assets/images/truffle.png';
 import ganache from './assets/images/ganache.png';
-import chainlink from './assets/images/chainlink.png';
 import java from './assets/images/java.png';
 import nodejs from './assets/images/nodejs.png';
 import reactjs from './assets/images/reactJs.png';
 import ipfs from './assets/images/ipfs.png';
-import web3js from './assets/images/web3js.png';
 import ethersjs from './assets/images/ethersJs.png';
-import opensea from './assets/images/opensea.jpg';
 import axil from './assets/images/axil.png';
 import unnamed from './assets/images/unnamed.jpg'
 import AssemblyLanguage from './assets/images/asm.jpg'
@@ -89,7 +86,7 @@ const App = () => {
       
 
       <div className="skills" style={{ opacity: 0, transition: 'opacity 0.5s' }} ref={(el) => (sections.current[1] = el)}>
-        <h3>👾I  abuse---</h3>
+        <h3>👾I use and  abuse---</h3>
         <div className="grid-container">
           {[
             { src: AssemblyLanguage, label: 'Assembly Language' },
@@ -129,29 +126,50 @@ const App = () => {
         {[
           {
             title: 'Basquiat',
-            imgSrc: opensea,
-            description: 'A P2B wallet for direct trade to and from Nigeria local banks and Ethereum blockchain',
+            imgSrc: axil,
+            description: 'A P2B wallet for direct trade to and from Nigerian local banks and Ethereum blockchain',
             sourceCode: 'Sourcecode',
             tryApp: 'Try App'
           },
           {
             title: 'Footclan (work in progress)',
             imgSrc: axil,
-            description: 'An esport platform that allows you to place eth weiger on mobile multiplayer games in custom server matches. currently supports codm, codm warzone, pubg, brawalla,farlight',
+            description: 'An esport platform that allows you to place ETH wager on mobile multiplayer games in custom server matches. Currently supports CODM, CODM Warzone, PUBG, Brawlhalla, Farlight',
             sourceCode: 'Sourcecode',
             tryApp: 'Try App'
           },
           {
-            title: 'Footclan (work in progress)',
+            title: 'CompilerX',
             imgSrc: axil,
-            description: 'An esport platform that allows you to place eth weiger on mobile multiplayer games in custom server matches. currently supports codm, codm warzone, pubg, brawalla,farlight',
+            description: 'A high-performance compiler designed for modern programming languages, focusing on optimization and speed.',
             sourceCode: 'Sourcecode',
             tryApp: 'Try App'
           },
           {
-            title: 'Footclan (work in progress)',
+            title: 'LangInter',
             imgSrc: axil,
-            description: 'An esport platform that allows you to place eth weiger on mobile multiplayer games in custom server matches. currently supports codm, codm warzone, pubg, brawalla,farlight',
+            description: 'A versatile language interpreter supporting multiple scripting languages, aimed at providing a seamless development experience.',
+            sourceCode: 'Sourcecode',
+            tryApp: 'Try App'
+          },
+          {
+            title: 'SearchPro',
+            imgSrc: axil,
+            description: 'An advanced search engine designed to deliver precise and fast search results using cutting-edge algorithms.',
+            sourceCode: 'Sourcecode',
+            tryApp: 'Try App'
+          },
+          {
+            title: 'Web3DApp',
+            imgSrc: axil,
+            description: 'A decentralized application built on blockchain technology to enhance transparency and security in transactions.',
+            sourceCode: 'Sourcecode',
+            tryApp: 'Try App'
+          },
+          {
+            title: 'AIMLProject',
+            imgSrc: axil,
+            description: 'An AI/ML project focused on predictive analytics with an accompanying research paper detailing the methodologies and results.',
             sourceCode: 'Sourcecode',
             tryApp: 'Try App'
           }
