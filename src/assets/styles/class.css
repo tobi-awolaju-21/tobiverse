@@ -121,6 +121,7 @@ li {
   height: auto;
   font-family: sans-serif;
   display: flex;
+  height: 50vw;
 }
 
 .projects {   
