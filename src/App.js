@@ -78,9 +78,22 @@ const Portfolio = () => {
       </div>
 
       <section className='abouts' ref={aboutRef}>
-      <img className='unnamed'  src= {unnamed}></img>
+      <div style={{ display: 'flex' }}>
+      <img className='unnamed' src={unnamed} alt="Profile" />
       <p>
-  web3 software engineer | Electronics engineering major.
+        Web3 software engineer | Electronics engineering major.
+      </p>
+    </div>
+      <p style={{width:'90vw'}}>
+      I'm Tobi Awolaju (Black Tea) 
+
+Innovative Web3 Software Engineer with a strong 
+foundation in Electronics Engineering. Passionate about leveraging
+ blockchain technology to create decentralized applications and solutions. Experienced
+  in developing smart contracts, blockchain protocols, and integrating Web3 functionalities. Adept at 
+bridging the gap between 
+traditional electronics engineering principles and cutting-edge 
+Web3 innovations.
       </p>
       </section>
 

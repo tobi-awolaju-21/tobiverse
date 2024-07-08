@@ -116,12 +116,10 @@ li {
     height: 70px;
 }
 .abouts{
-    margin-top: 20px;
-  padding: 10px;
-  height: auto;
   font-family: sans-serif;
-  display: flex;
-  height: 50vw;
+  margin-top: 20px;
+  padding: 20px;
+  height:50vh;
 }
 
 .projects {   
