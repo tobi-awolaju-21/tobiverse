@@ -68,7 +68,9 @@ h4 {
 p {
     color: #000000c0;
     padding: 10px;
+    padding-right: 20px;
     margin: 0px;
+    margin-top: 15px;
     margin-bottom:10px;
 }
 li {
@@ -109,8 +111,9 @@ li {
 }
 
 .unnamed{
+    margin-top: 15px;
     padding: 10px;
-    padding-right: 0px;
+    padding-left:30px;
     border-radius:90%;
     width: 20vw;
     height: 20vw;
