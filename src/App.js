@@ -10,7 +10,7 @@ import nodejs from './assets/images/nodejs.png';
 import reactjs from './assets/images/reactJs.png';
 import ipfs from './assets/images/ipfs.png';
 import ethersjs from './assets/images/ethersJs.png';
-import axil from './assets/images/axii.webp';
+import axil from './assets/images/axii.jpg';
 import unnamed from './assets/images/unnamed.jpg'
 import AssemblyLanguage from './assets/images/asm.jpg'
 import clang from './assets/images/c.png'
@@ -22,7 +22,6 @@ const App = () => {
   const [loading, setLoading] = useState(true);
   const aboutRef = useRef(null);
   const sections = useRef([]);
-  window.scrollTo({ top: 0, behavior: 'smooth' });
 
   const scrollToAbout = () => {
     aboutRef.current.scrollIntoView({ behavior: 'smooth' });
@@ -127,6 +126,7 @@ const App = () => {
             <h1 style={{ fontFamily: 'BagelFatOne' }}>
               Hello, my name is <span style={{ color: 'white' }}>Tobi Awolaju.</span>
             </h1>
+            
             <h1 style={{ fontFamily: 'BagelFatOne' }}>I'm a software engineer.</h1>
             <button onClick={scrollToAbout} className='button_more'>Know more</button>
           </>
@@ -137,9 +137,9 @@ const App = () => {
       <section className='abouts' ref={aboutRef}>
         <div style={{ display: 'flex' }}>
           <img className='unnamed' src={unnamed} alt="Profile" />
-          <p style={{ fontWeight: 'bold' }}>
-            Web3 software engineer | Electronics engineering major.
-          </p>
+          <h3 style={{ fontWeight: 'bold' }}>
+            About me
+          </h3>
         </div>
         <p style={{ width: '90vw' }}>
           I'm Tobi Awolaju A software engineer witha a keen for clean and standard builds

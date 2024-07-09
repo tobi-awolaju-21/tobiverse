@@ -22,7 +22,7 @@ body {
     background-color: #fffae7;
     margin: 0px;
     padding: 0px;
-    overflow: hidden;
+    overflow: none;
 }
 .button_more{
     margin-top: 40px;
@@ -173,9 +173,11 @@ li {
     margin: 0px;
     margin-bottom: 50px;
     padding: 20px;
+    margin: 10px;
 }
 .projectimg{
     width: 100%;
+    margin-bottom: 20px;
 }
 
 .sourceb {
