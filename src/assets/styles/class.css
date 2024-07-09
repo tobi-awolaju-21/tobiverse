@@ -22,6 +22,7 @@ body {
     background-color: #fffae7;
     margin: 0px;
     padding: 0px;
+    overflow: hidden;
 }
 .button_more{
     margin-top: 40px;
@@ -35,7 +36,7 @@ body {
 h1 {
     font-family: "CalibreSemibold";
     font-size: clamp(1.5rem, 10vw, 2rem);
-    color: #3b3b3b;
+    color: #ffffff74;
     margin: 0px;
     font-family: sans-serif;
     font-weight: 300;
@@ -100,23 +101,22 @@ li {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #48ac5f;
+    background-color: #1338bc;
     z-index: -1;
     transition: background-color 2s;
   }
   
   .splash.loading::after {
-    background-color: #48ac5f; /* Change to desired color after 2 seconds */
+    background-color: #2b4b72; /* Change to desired color after 2 seconds */
   }
   
   .glitch {
     position: relative;
-    font-size: 2rem;
-    color: #eaff00;
+    font-size: 0.7rem;
+    color: #ffffff;
   }
   
   .glitch::before, .glitch::after {
-    content:'you found me' ;
     position: absolute;
     top: -25vh;
     left: -25vw;

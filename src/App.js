@@ -25,36 +25,32 @@ const App = () => {
 
   const scrollToAbout = () => {
     aboutRef.current.scrollIntoView({ behavior: 'smooth' });
+    document.body.style.overflow = 'auto';
   };
-
 
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 5000);
+    }, 7000);
 
-    // Callback function to handle intersection changes
     const handleIntersection = (entries) => {
-      entries.forEach(entry => {
+      entries.forEach((entry) => {
         entry.target.style.opacity = entry.isIntersecting ? 1 : 0;
       });
     };
 
-    // Create an intersection observer
     const observer = new IntersectionObserver(handleIntersection, {
-      threshold: 0.1 // Adjust threshold as needed
+      threshold: 0.1,
     });
 
-    // Observe each section
-    sections.current.forEach(section => {
+    sections.current.forEach((section) => {
       if (section) {
         observer.observe(section);
       }
     });
 
-    // Clean up observer when the component is unmounted
     return () => {
-      sections.current.forEach(section => {
+      sections.current.forEach((section) => {
         if (section) {
           observer.unobserve(section);
         }
@@ -62,12 +58,69 @@ const App = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const preTag = document.getElementById('ascii-donut');
+    let A = 1,
+      B = 1;
+
+    const asciiframe = () => {
+      const b = [];
+      const z = [];
+      A += 0.07;
+      B += 0.03;
+      const cA = Math.cos(A),
+        sA = Math.sin(A),
+        cB = Math.cos(B),
+        sB = Math.sin(B);
+
+      for (let k = 0; k < 1760; k++) {
+        b[k] = k % 80 === 79 ? '\n' : ' ';
+        z[k] = 0;
+      }
+
+      for (let j = 0; j < 6.28; j += 0.07) {
+        const ct = Math.cos(j),
+          st = Math.sin(j);
+        for (let i = 0; i < 6.28; i += 0.02) {
+          const sp = Math.sin(i),
+            cp = Math.cos(i),
+            h = ct + 2,
+            D = 1 / (sp * h * sA + st * cA + 5),
+            t = sp * h * cA - st * sA;
+
+          const x = 0 | (40 + 30 * D * (cp * h * cB - t * sB)),
+            y = 0 | (12 + 15 * D * (cp * h * sB + t * cB)),
+            o = x + 80 * y,
+            N = 0 | (
+              8 *
+              ((st * sA - sp * ct * cA) * cB -
+                sp * ct * sA -
+                st * cA -
+                cp * ct * sB)
+            );
+          if (22 > y && y > 0 && x > 0 && 80 > x && D > z[o]) {
+            z[o] = D;
+            b[o] = '.,-~:;=!*#$@'[N > 0 ? N : 0];
+          }
+        }
+      }
+      preTag.innerHTML = b.join('');
+    };
+
+    const interval = setInterval(asciiframe, 50);
+    return () => clearInterval(interval);
+  }, []);
+
+
   return (
     <div>
-    
-    <div className={`splash ${loading ? 'loading' : ''}`}>
+
+      <div className={`splash ${loading ? 'loading' : ''}`}>
         {loading ? (
-          <div className="glitch"></div>
+          <div className="glitch">
+            <pre id="ascii-donut"></pre>
+
+          </div>
         ) : (
           <>
             <h1 style={{ fontFamily: 'BagelFatOne' }}>
@@ -81,22 +134,21 @@ const App = () => {
 
 
       <section className='abouts' ref={aboutRef}>
-      <div style={{ display: 'flex' }}>
-      <img className='unnamed' src={unnamed} alt="Profile" />
-      <p style={{ fontWeight: 'bold' }}>
-
-        Web3 software engineer | Electronics engineering major.
-      </p>
-    </div>
-      <p style={{width:'90vw'}}>
-      I'm Tobi Awolaju A software engineer witha a keen for clean and standard builds
-      I hava a strong bacground in Engineering, Electronics engineering major
-      and a strong desire to understand the working princeples of 
-      every system that intrests me down to the first bit.
-      </p>
+        <div style={{ display: 'flex' }}>
+          <img className='unnamed' src={unnamed} alt="Profile" />
+          <p style={{ fontWeight: 'bold' }}>
+            Web3 software engineer | Electronics engineering major.
+          </p>
+        </div>
+        <p style={{ width: '90vw' }}>
+          I'm Tobi Awolaju A software engineer witha a keen for clean and standard builds
+          I hava a strong bacground in Engineering, Electronics engineering major
+          and a strong desire to understand the working princeples of
+          every system that intrests me down to the first bit.
+        </p>
       </section>
 
-      
+
 
       <div className="skills" style={{ opacity: 0, transition: 'opacity 0.5s' }} ref={(el) => (sections.current[1] = el)}>
         <h3>👾I use and  abuse---</h3>
@@ -188,7 +240,7 @@ const App = () => {
           </div>
         ))}
 
-        
+
       </div>
 
       <div className="contact" style={{ opacity: 0, transition: 'opacity 0.5s' }} ref={(el) => (sections.current[4] = el)}>
@@ -208,6 +260,6 @@ export default App;
 
 
 
-       
 
-   
+
+
