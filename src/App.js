@@ -127,7 +127,7 @@ const App = () => {
             <h1 style={{ fontFamily: 'BagelFatOne' }}>
               Hello, my name is <span style={{ color: 'white' }}>Tobi Awolaju.</span>
             </h1>
-            
+
             <h1 style={{ fontFamily: 'BagelFatOne' }}>I'm a software engineer.</h1>
             <button onClick={scrollToAbout} className='button_more'>Know more</button>
           </>
@@ -143,11 +143,19 @@ const App = () => {
           </h3>
         </div>
         <p style={{ width: '90vw' }}>
-          I'm Tobi Awolaju A software engineer witha a keen for clean and standard builds
-          I hava a strong bacground in Engineering, Electronics engineering major
-          and a strong desire to understand the working princeples of
-          every system that intrests me down to the first bit.
-        </p>
+          I'm a twenty-three year old Animator, programmer, and PhD student🎓. I've been writing Java ☕ since 7th grade,
+          and Rust🦀 is my favorite programming language.
+          Compiler design is easily my favorite subject in computer science: I've implemented
+          several of my own programming languages
+          which you can see below, and read about on my blog.
+          I have an unending fondness for Turing Tarpits and
+          SKI combinator calculus.
+          I'm also a huge linguistics nerd: he estado
+          hablando español desde 2021, y puedo hablar bastante bien!🇪🇸 Si tú también lo hablas,
+          envíame un mensaje!
+          Although most of my work is in compilers, I write tons of other kinds of software.
+          I have a lot of experience in crypto, systems programming, machine learning, robotics, and more!
+          Check out all my projects! </p>
       </section>
 
 
@@ -180,11 +188,11 @@ const App = () => {
       <div className="experience" style={{ opacity: 0, transition: 'opacity 0.5s' }} ref={(el) => (sections.current[2] = el)}>
         <h3>👾Experience</h3>
         <ul>
-        <li>NETFLIX (Senior Software Engineer) 2024 - present - work on gender slider</li>
-        <li>SPOTIFY (Senior Software Engineer) 2024 - present - wrap implementation</li>
-        <li>AMAZON (Senior Software Engineer) 2024 - present - catapurt delivery system</li>
-        <li>SLIDES (Senior Software Engineer) 2024 - present - worked on dating app for minors</li>
-       </ul>
+          <li>NETFLIX (Senior Software Engineer) 2024 - present - work on gender slider</li>
+          <li>SPOTIFY (Senior Software Engineer) 2024 - present - wrap implementation</li>
+          <li>AMAZON (Senior Software Engineer) 2024 - present - catapurt delivery system</li>
+          <li>SLIDES (Senior Software Engineer) 2024 - present - worked on dating app for minors</li>
+        </ul>
       </div>
 
       <div className="projects" style={{ opacity: 0, transition: 'opacity 0.5s' }} ref={(el) => (sections.current[3] = el)}>
