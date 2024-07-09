@@ -138,7 +138,7 @@ const App = () => {
       <section className='abouts' ref={aboutRef}>
         <div style={{ display: 'flex' }}>
           <img className='unnamed' src={unnamed} alt="Profile" />
-          <h3 style={{ fontWeight: 'bold' }}>
+          <h3>
             About me
           </h3>
         </div>
