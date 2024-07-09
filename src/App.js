@@ -157,11 +157,11 @@ const App = () => {
           I have a lot of experience in crypto, systems programming, machine learning, robotics, and more!
           Check out all my projects! </p>
 
-          <div style={{display: 'flex'}}> 
-         <button>Github</button>
+        <div style={{ display: 'flex' }}>
+          <button>Github</button>
           <button>Arts</button>
           <button>Resume</button>
-          </div>
+        </div>
       </section>
 
 
@@ -261,16 +261,17 @@ const App = () => {
       <div className="contact" style={{ opacity: 0, transition: 'opacity 0.5s' }} ref={(el) => (sections.current[4] = el)}>
         <h3>👾Get in touch ---</h3>
         <div className="contact_mom">
-        <button>
-        <a 
-          href="https://www.linkedin.com/in/awolaju/" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          style={{ textDecoration: 'none', color: 'inherit' }}
-        >
-          Message me on LinkedIn
-        </a>
-      </button>
+          <button>
+            <a
+              className="sourceb"
+              href="https://www.linkedin.com/in/awolaju/"
+              target="_blank"
+              rel="noopener noreferrer"
+
+            >
+              Message me on LinkedIn
+            </a>
+          </button>
           <div className="footies"></div>
         </div>
       </div>
