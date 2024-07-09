@@ -32,7 +32,7 @@ const App = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 7000);
+    }, 5000);
 
     const handleIntersection = (entries) => {
       entries.forEach((entry) => {
