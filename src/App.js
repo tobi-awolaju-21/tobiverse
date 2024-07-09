@@ -267,7 +267,6 @@ const App = () => {
               href="https://www.linkedin.com/in/awolaju/"
               target="_blank"
               rel="noopener noreferrer"
-
             >
               Message me on LinkedIn
             </a>
