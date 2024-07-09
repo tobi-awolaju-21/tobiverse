@@ -48,6 +48,25 @@ body {
 }
 
 
+button{
+    margin: 10px;
+    padding: 5px;
+    border: 3px solid #1338bc;
+    border-radius: 0px;
+    background-color: #00000000;
+    color: #000000;
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, #00000000 50%, #1338bc 50%);
+    transition: background-position 0.3s ease;
+}
+button:hover{
+    background-position: -100% 0;
+    color:#ffffff
+
+}
+
+
+
 
 
 h1 {
