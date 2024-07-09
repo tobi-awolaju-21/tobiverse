@@ -158,7 +158,7 @@ const App = () => {
           Check out all my projects! </p>
 
           <div style={{display: 'flex'}}> 
-          <button>Medium Posts</button>
+          <button>Researchs</button>
           <button>Git</button>
           <button>Arts</button>
           <button>Resume</button>
