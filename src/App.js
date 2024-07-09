@@ -158,8 +158,7 @@ const App = () => {
           Check out all my projects! </p>
 
           <div style={{display: 'flex'}}> 
-          <button>Researchs</button>
-          <button>Github</button>
+         <button>Github</button>
           <button>Arts</button>
           <button>Resume</button>
           </div>
