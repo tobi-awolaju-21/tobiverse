@@ -206,13 +206,12 @@ li {
 }
 .box{
     margin: 0px;
-    margin-bottom: 50px;
+    margin-top: 40px;
     padding: 20px;
-    margin: 10px;
+
 }
 .projectimg{
     width: 100%;
-    margin-bottom: 20px;
 }
 
 .sourceb {
@@ -229,6 +228,7 @@ li {
     background-size: 200% 100%;
     background-image: linear-gradient(to right, #1338bc00 50%, #2b4b72 50%);
     transition: background-position 0.3s ease;
+    margin: 0px;
 }
 
 .sourceb:hover {
@@ -255,12 +255,15 @@ li {
 }
 
 .contact {
-    height: 90vh;
+    background-color:#fffcf3;
+    color:#fff;
+    height: 95vh;
     padding: 20px;
 }
+
 .contact_mom{
 margin: 0px;
-height: 100%;
+height: 80vh;
 text-align: center;
 align-content: center;
 
