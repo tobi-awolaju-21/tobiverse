@@ -189,9 +189,9 @@ const App = () => {
         <h3>👾Experience</h3>
         <ul>
           <li>NETFLIX (Senior Software Engineer) 2024 - present - work on gender slider</li>
-          <li>SPOTIFY (Senior Software Engineer) 2024 - present - wrap implementation</li>
-          <li>AMAZON (Senior Software Engineer) 2024 - present - catapurt delivery system</li>
-          <li>SLIDES (Senior Software Engineer) 2024 - present - worked on dating app for minors</li>
+          <li>SLIDES (Senior Software Engineer) 2024 - present - wrap implementation</li>
+          <li>Game starts (Senior Software Engineer) 2024 - present - catapurt delivery system</li>
+          <li>Lisk Signature (Senior Software Engineer) 2024 - present - worked on dating app for minors</li>
         </ul>
       </div>
 
