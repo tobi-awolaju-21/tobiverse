@@ -151,7 +151,7 @@ const App = () => {
           I have an unending fondness for Turing Tarpits and
           SKI combinator calculus.
           I'm also a huge linguistics nerd: he estado
-          hablando español desde 2021, y puedo hablar bastante bien!🇪🇸 Si tú también lo hablas,
+          hablando español desde 2024, y puedo hablar bastante bien!🇪🇸 Si tú también lo hablas,
           envíame un mensaje!
           Although most of my work is in compilers, I write tons of other kinds of software.
           I have a lot of experience in crypto, systems programming, machine learning, robotics, and more!
@@ -159,7 +159,7 @@ const App = () => {
 
           <div style={{display: 'flex'}}> 
           <button>Researchs</button>
-          <button>Git</button>
+          <button>Github</button>
           <button>Arts</button>
           <button>Resume</button>
           </div>
