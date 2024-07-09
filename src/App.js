@@ -194,7 +194,7 @@ const App = () => {
       <div className="experience" style={{ opacity: 0, transition: 'opacity 0.5s' }} ref={(el) => (sections.current[2] = el)}>
         <h3>👾Experience</h3>
         <ul>
-          <li>NETFLIX (Senior Software Engineer) 2024 - present - work on gender slider</li>
+          <li>Upwork (Freelancer) 2024 - present - work on gender slider</li>
           <li>SLIDES (Senior Software Engineer) 2024 - present - wrap implementation</li>
           <li>Game starts (Senior Software Engineer) 2024 - present - catapurt delivery system</li>
           <li>Lisk Signature (Senior Software Engineer) 2024 - present - worked on dating app for minors</li>
