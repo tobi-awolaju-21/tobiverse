@@ -22,7 +22,7 @@ body {
     background-color: #fffae7;
     margin: 0px;
     padding: 0px;
-    overflow: none;
+    overflow: hidden;
 }
 .button_more{
     margin-top: 40px;

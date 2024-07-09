@@ -23,6 +23,7 @@ const App = () => {
   const aboutRef = useRef(null);
   const sections = useRef([]);
 
+  window.scrollTo(0, 0);
   const scrollToAbout = () => {
     aboutRef.current.scrollIntoView({ behavior: 'smooth' });
     document.body.style.overflow = 'auto';
@@ -179,12 +180,11 @@ const App = () => {
       <div className="experience" style={{ opacity: 0, transition: 'opacity 0.5s' }} ref={(el) => (sections.current[2] = el)}>
         <h3>👾Experience</h3>
         <ul>
-          <li>Lead Software engineer for an open source compliler for a DePi project</li>
-          <li>Lead software engineer as slides a campus social app</li>
-          <li>Lead researcher on Among us turning test</li>
-          <li>Extensive blockchain engineering experience across Layer-1, Layer-2, and PC provider wallet</li>
-          <li>Proficient in Java with a deep understanding of JVM, IO, multi-threading, concurrency, and networking and EVM</li>
-        </ul>
+        <li>NETFLIX (Senior Software Engineer) 2024 - present - work on gender slider</li>
+        <li>SPOTIFY (Senior Software Engineer) 2024 - present - wrap implementation</li>
+        <li>AMAZON (Senior Software Engineer) 2024 - present - catapurt delivery system</li>
+        <li>SLIDES (Senior Software Engineer) 2024 - present - worked on dating app for minors</li>
+       </ul>
       </div>
 
       <div className="projects" style={{ opacity: 0, transition: 'opacity 0.5s' }} ref={(el) => (sections.current[3] = el)}>
