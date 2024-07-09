@@ -156,6 +156,10 @@ const App = () => {
           Although most of my work is in compilers, I write tons of other kinds of software.
           I have a lot of experience in crypto, systems programming, machine learning, robotics, and more!
           Check out all my projects! </p>
+
+          <div style={{display: 'flex'}}> 
+      
+          </div>
       </section>
 
 
