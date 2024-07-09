@@ -261,7 +261,7 @@ const App = () => {
       <div className="contact" style={{ opacity: 0, transition: 'opacity 0.5s' }} ref={(el) => (sections.current[4] = el)}>
         <h3>👾Get in touch ---</h3>
         <div className="contact_mom">
-          <button>
+          <div>
             <a
               className="sourceb"
               href="https://www.linkedin.com/in/awolaju/"
@@ -271,7 +271,7 @@ const App = () => {
             >
               Message me on LinkedIn
             </a>
-          </button>
+          </div>
           <div className="footies"></div>
         </div>
       </div>
