@@ -22,6 +22,7 @@ const App = () => {
   const [loading, setLoading] = useState(true);
   const aboutRef = useRef(null);
   const sections = useRef([]);
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 
   const scrollToAbout = () => {
     aboutRef.current.scrollIntoView({ behavior: 'smooth' });
@@ -233,8 +234,8 @@ const App = () => {
           }
         ].map((project, index) => (
           <div className="box" key={index}>
-            <h4 style={{ textAlign: 'left' }}>{project.title}</h4>
             <img className="projectimg" src={project.imgSrc} alt={project.title} />
+            <h4 style={{ textAlign: 'left' }}>{project.title}</h4>
             <p style={{ textAlign: 'left', opacity: 0.7 }}>{project.description}</p>
             <button className="sourceb">{project.sourceCode}</button>
           </div>
