@@ -101,7 +101,7 @@ const App = () => {
             );
           if (22 > y && y > 0 && x > 0 && 80 > x && D > z[o]) {
             z[o] = D;
-            b[o] = '.,-~:;=!*#$✨'[N > 0 ? N : 0];
+            b[o] = '.,-~:;=!*#$@'[N > 0 ? N : 0];
           }
         }
       }
@@ -125,10 +125,10 @@ const App = () => {
         ) : (
           <>
             <h1 style={{ fontFamily: 'BagelFatOne'}}>
-              Hi, my name is <span style={{ color: 'white' }}>Awolaju Tobi</span>
+            Hi! I'm <span style={{ color: 'white' }}>Awolaju Tobi</span>
             </h1>
 
-            <h1 style={{ fontFamily: 'BagelFatOne' }}>  </h1>
+            <h1 style={{ fontFamily: 'BagelFatOne' }}> I Love Web3 and Making arts  </h1>
             <div style={{display:'flex'}}>
             <button onClick={scrollToAbout} className='button_more'>Know more</button>
             <button onClick={scrollToAbout} className='button_more'>Experience</button>
@@ -144,7 +144,7 @@ const App = () => {
         <div style={{ display: 'flex' }}>
           <img className='unnamed' src={unnamed} alt="Profile" />
           <h3>
-            .Jpg
+            google photos
           </h3>
         </div>
         <p style={{ width:'80%', margin:'10%', marginTop:'5px' }}>
