@@ -101,7 +101,7 @@ const App = () => {
             );
           if (22 > y && y > 0 && x > 0 && 80 > x && D > z[o]) {
             z[o] = D;
-            b[o] = '.,-~:;=!*#$@'[N > 0 ? N : 0];
+            b[o] = '.,-~:;=!*#$✨'[N > 0 ? N : 0];
           }
         }
       }
@@ -124,12 +124,17 @@ const App = () => {
           </div>
         ) : (
           <>
-            <h1 style={{ fontFamily: 'BagelFatOne' }}>
-              Hello, my name is <span style={{ color: 'white' }}>Tobi Awolaju.</span>
+            <h1 style={{ fontFamily: 'BagelFatOne'}}>
+              Hi, my name is <span style={{ color: 'white' }}>Awolaju Tobi</span>
             </h1>
 
-            <h1 style={{ fontFamily: 'BagelFatOne' }}>I'm a software engineer.</h1>
+            <h1 style={{ fontFamily: 'BagelFatOne' }}>  </h1>
+            <div style={{display:'flex'}}>
             <button onClick={scrollToAbout} className='button_more'>Know more</button>
+            <button onClick={scrollToAbout} className='button_more'>Experience</button>
+            <button onClick={scrollToAbout} className='button_more'>Projects</button>
+         
+            </div>
           </>
         )}
       </div>
@@ -139,35 +144,24 @@ const App = () => {
         <div style={{ display: 'flex' }}>
           <img className='unnamed' src={unnamed} alt="Profile" />
           <h3>
-            About me
+            .Jpg
           </h3>
         </div>
-        <p style={{ width: '90vw' }}>
-          I'm a twenty-three year old Animator, programmer, and PhD student🎓. I've been writing Java ☕ since 7th grade,
+        <p style={{ width:'80%', margin:'10%', marginTop:'5px' }}>
+          Hi! I'm Tobi, Loves blockchain,legos and tmnt. 
+          an Hobbist Animator and programmer. I've been writing Js for a while now,
           and Rust🦀 is my favorite programming language.
           Compiler design is easily my favorite subject in computer science: I've implemented
           several of my own programming languages
           which you can see below, and read about on my blog.
           I have an unending fondness for Turing Tarpits and
-          SKI combinator calculus.
-          I'm also a huge linguistics nerd: he estado
-          hablando español desde 2024, y puedo hablar bastante bien!🇪🇸 Si tú también lo hablas,
-          envíame un mensaje!
-          Although most of my work is in compilers, I write tons of other kinds of software.
-          I have a lot of experience in crypto, systems programming, machine learning, robotics, and more!
-          Check out all my projects! </p>
-
-        <div style={{ display: 'flex' }}>
-          <button>Github</button>
-          <button>Arts</button>
-          <button>Resume</button>
-        </div>
+          SKI combinator calculus. </p>
       </section>
 
 
 
       <div className="skills" style={{ opacity: 0, transition: 'opacity 0.5s' }} ref={(el) => (sections.current[1] = el)}>
-        <h3>👾I use and  abuse---</h3>
+        <h3>👾I use and sometimes abuse:</h3>
         <div className="grid-container">
           {[
             { src: AssemblyLanguage, label: 'Assembly Language' },
