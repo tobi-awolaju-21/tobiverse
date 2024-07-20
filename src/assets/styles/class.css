@@ -114,13 +114,13 @@ li {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #795bff;
+    background-color: #0166ff;
     z-index: -1;
     transition: background-color 2s;
   }
   
   .splash.loading::after {
-    background-color: #795bff;
+    background-color: #0166ff;
     ; /* Change to desired color after 2 seconds */
   }
   
@@ -350,3 +350,37 @@ align-content: center;
     text-decoration: none;
     color: #e9e9e9;
   }
+
+
+
+
+
+  /* Add this CSS */
+.skills {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .scroll-container {
+    display: flex;
+    white-space: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    animation: scroll 15s linear infinite;
+  }
+  
+  .grid-item {
+    display: inline-block;
+    text-align: center;
+    padding: 0 10px;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
