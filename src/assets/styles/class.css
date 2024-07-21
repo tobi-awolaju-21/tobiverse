@@ -362,10 +362,10 @@ align-content: center;
   }
   
   .scroll-container {
+    width: 200%;
     display: flex;
     white-space: nowrap;
-    overflow-x: auto;
-    scroll-behavior: smooth;
+    overflow-x: hidden;
     animation: scroll 15s linear infinite;
   }
   
@@ -377,10 +377,10 @@ align-content: center;
   
   @keyframes scroll {
     0% {
-      transform: translateX(0%);
+      transform: translateX(0);
     }
     100% {
-      transform: translateX(-100%);
+      transform: translateX(-50%);
     }
   }
   

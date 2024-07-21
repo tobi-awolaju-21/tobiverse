@@ -160,31 +160,34 @@ const App = () => {
 
 
 
-      // Updated JSX
 <div className="skills" style={{ opacity: 0, transition: 'opacity 0.5s' }} ref={(el) => (sections.current[1] = el)}>
   <h3>👾I use and sometimes abuse:</h3>
   <div className="scroll-container">
-    {[
-      { src: AssemblyLanguage, label: 'Assembly Language' },
-      { src: clang, label: 'c/c++' },
-      { src: rust, label: 'Rust' },
-      { src: solidity, label: 'Solidity' },
-      { src: nodejs, label: 'NodeJs' },
-      { src: java, label: 'Java' },
-      { src: reactjs, label: 'Reactjs' },
-      { src: truffle, label: 'truffle' },
-      { src: ganache, label: 'Ganache' },
-      { src: mongodb, label: 'mongo DB' },
-      { src: ipfs, label: 'IPFS' },
-      { src: ethersjs, label: 'ethersJs' }
-    ].map((skill, index) => (
-      <div className="grid-item" key={index}>
-        <img className="pfp4" src={skill.src} alt={skill.label} />
-        <p>{skill.label}</p>
-      </div>
-    ))}
+    {[...Array(2)].map((_, i) =>
+      [
+        { src: AssemblyLanguage, label: 'Assembly Language' },
+        { src: clang, label: 'c/c++' },
+        { src: rust, label: 'Rust' },
+        { src: solidity, label: 'Solidity' },
+        { src: nodejs, label: 'NodeJs' },
+        { src: java, label: 'Java' },
+        { src: reactjs, label: 'Reactjs' },
+        { src: truffle, label: 'truffle' },
+        { src: ganache, label: 'Ganache' },
+        { src: mongodb, label: 'mongo DB' },
+        { src: ipfs, label: 'IPFS' },
+        { src: ethersjs, label: 'ethersJs' }
+      ].map((skill, index) => (
+        <div className="grid-item" key={`${i}-${index}`}>
+          <img className="pfp4" src={skill.src} alt={skill.label} />
+          <p>{skill.label}</p>
+        </div>
+      ))
+    )}
   </div>
 </div>
+
+
 
 
       <div className="experience" style={{ opacity: 0, transition: 'opacity 0.5s' }} ref={(el) => (sections.current[2] = el)}>
