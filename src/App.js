@@ -128,7 +128,7 @@ const App = () => {
             Hi! I'm <span style={{ color: 'white' }}>Awolaju Tobi</span>
             </h1>
 
-            <h1 style={{ fontFamily: 'BagelFatOne' }}> I Love Blockchain and modern art <span  style={{ color: 'white' }} > 🍌 </span> </h1>
+            <h1 style={{ fontFamily: 'BagelFatOne' }}> I Love Blockchain and modern modern αят <span  style={{ color: 'white' }} > 🍌 </span> </h1>
             <div style={{display:'flex'}}>
             <button onClick={scrollToAbout} className='button_more'>Home</button>
             <button onClick={scrollToAbout} className='button_more'>Projects</button>
@@ -144,7 +144,7 @@ const App = () => {
         <div style={{ display: 'flex' }}>
           <img className='unnamed' src={unnamed} alt="Profile" />
           <h3>
-            google photos
+           Tobi (Kawaii)
           </h3>
         </div>
         <p style={{ width:'80%', margin:'10%', marginTop:'5px' }}>
@@ -161,7 +161,7 @@ const App = () => {
 
 
 <div className="skills" style={{ opacity: 0, transition: 'opacity 0.5s' }} ref={(el) => (sections.current[1] = el)}>
-  <h3>👾I use and sometimes abuse:</h3>
+  <h3>👾I use and abuse:</h3>
   <div className="scroll-container">
     {[...Array(2)].map((_, i) =>
       [
