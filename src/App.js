@@ -128,7 +128,12 @@ const App = () => {
            <span style={{ color: 'white' }}>Awolaju Tobi</span>
             </h1>
 
-            <h1 style={{ fontFamily: 'BagelFatOne' fontSize:'18px'}}> I enjoy software development <span  style={{ color: 'white' }}>🐙</span> </h1>
+            <h1 style={{ fontFamily: 'BagelFatOne', fontSize: '18px' }}>
+  I enjoy software development <span style={{ color: 'white' }}>🐙</span>
+</h1>
+
+
+
             <div style={{display:'flex'}}>
             <button onClick={scrollToAbout} className='button_more'>About me</button>
             <button onClick={scrollToAbout} className='button_more'>Writings</button>
