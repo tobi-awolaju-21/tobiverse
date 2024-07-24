@@ -128,10 +128,10 @@ const App = () => {
             Hi! I'm <span style={{ color: 'white' }}>Awolaju Tobi</span>
             </h1>
 
-            <h1 style={{ fontFamily: 'BagelFatOne' }}> I ♡ Blockchain and Art <span  style={{ color: 'yellow' }} >:)</span> </h1>
+            <h1 style={{ fontFamily: 'BagelFatOne' }}> I ♡ Blockchain and Christ <span  style={{ color: 'white' }}>✞</span> </h1>
             <div style={{display:'flex'}}>
-            <button onClick={scrollToAbout} className='button_more'>Web3 portfolo</button>
-            <button onClick={scrollToAbout} className='button_more'>My Arts</button>
+            <button onClick={scrollToAbout} className='button_more'>About me</button>
+            <button onClick={scrollToAbout} className='button_more'>Writings</button>
          
             </div>
           </>
@@ -203,42 +203,42 @@ const App = () => {
             title: 'CompilerX',
             imgSrc: axil,
             description: 'A high-performance compiler designed for modern programming languages, focusing on optimization and speed.',
-            sourceCode: 'See Source Code',
+            sourceCode: 'Github',
             link: 'http://www.goggle.com'
           },
           {
             title: 'LangInter',
             imgSrc: axil,
             description: 'A versatile language interpreter supporting multiple scripting languages, aimed at providing a seamless development experience.',
-            sourceCode: 'See Source Code',
+            sourceCode: 'Try it out',
             link: 'http://www.goggle.com'
           },
           {
             title: 'SearchPro',
             imgSrc: axil,
             description: 'An advanced search engine designed to deliver precise and fast search results using cutting-edge algorithms.',
-            sourceCode: 'See Source Code',
+            sourceCode: 'Github',
             link: 'http://www.goggle.com'
           },
           {
             title: 'NFTMarketplace',
             imgSrc: axil,
             description: 'A marketplace for creating, buying, and selling NFTs (non-fungible tokens) with features such as auctions, royalties, and cross-chain interoperability.',
-            sourceCode: 'See Source Code',
+            sourceCode: 'Github',
             link: 'http://www.goggle.com'
           },
           {
             title: 'DAOPlatform',
             imgSrc: axil,
             description: 'A platform for creating and managing Decentralized Autonomous Organizations (DAOs) with voting mechanisms, treasury management, and proposal tracking.',
-            sourceCode: 'See Source Code',
+            sourceCode: 'Gthub',
             link: 'http://www.goggle.com'
           },
           {
             title: 'BlockchainIdentity',
             imgSrc: axil,
             description: 'A decentralized identity verification system leveraging blockchain to provide secure and verifiable digital identities.',
-            sourceCode: 'See Source Code',
+            sourceCode: 'Github',
             link: 'http://www.goggle.com'
           }
         ].map((project, index) => (
