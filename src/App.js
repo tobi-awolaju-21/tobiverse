@@ -128,11 +128,10 @@ const App = () => {
             Hi! I'm <span style={{ color: 'white' }}>Awolaju Tobi</span>
             </h1>
 
-            <h1 style={{ fontFamily: 'BagelFatOne' }}> I Love Blockchain and modern modern αят <span  style={{ color: 'white' }} > 🍌 </span> </h1>
+            <h1 style={{ fontFamily: 'BagelFatOne' }}> I ♡ Blockchain and Art <span  style={{ color: 'yellow' }} >:)</span> </h1>
             <div style={{display:'flex'}}>
-            <button onClick={scrollToAbout} className='button_more'>Home</button>
-            <button onClick={scrollToAbout} className='button_more'>Projects</button>
-            <button onClick={scrollToAbout} className='button_more'>Writing</button>
+            <button onClick={scrollToAbout} className='button_more'>Web3 portfolo</button>
+            <button onClick={scrollToAbout} className='button_more'>My Arts</button>
          
             </div>
           </>
@@ -143,9 +142,6 @@ const App = () => {
       <section className='abouts' ref={aboutRef}>
         <div style={{ display: 'flex' }}>
           <img className='unnamed' src={unnamed} alt="Profile" />
-          <h3>
-           Tobi (Kawaii)
-          </h3>
         </div>
         <p style={{ width:'80%', margin:'10%', marginTop:'5px' }}>
           Hi! I'm Tobi, Loves blockchain,legos and tmnt. 
@@ -161,7 +157,7 @@ const App = () => {
 
 
 <div className="skills" style={{ opacity: 0, transition: 'opacity 0.5s' }} ref={(el) => (sections.current[1] = el)}>
-  <h3>👾I use and abuse:</h3>
+  <h3>🪙 I Use</h3>
   <div className="scroll-container">
     {[...Array(2)].map((_, i) =>
       [
@@ -191,7 +187,7 @@ const App = () => {
 
 
       <div className="experience" style={{ opacity: 0, transition: 'opacity 0.5s' }} ref={(el) => (sections.current[2] = el)}>
-        <h3>👾Experience</h3>
+        <h3>🪙 Experience</h3>
         <ul>
           <li>Upwork (Freelancer) 2024 - present - work on gender slider</li>
           <li>SLIDES (Senior Software Engineer) 2024 - present - wrap implementation</li>
@@ -201,7 +197,7 @@ const App = () => {
       </div>
 
       <div className="projects" style={{ opacity: 0, transition: 'opacity 0.5s' }} ref={(el) => (sections.current[3] = el)}>
-        <h3>👾Projects ---</h3>
+        <h3>🪙 Projects ---</h3>
         {[
           {
             title: 'CompilerX',
@@ -248,17 +244,20 @@ const App = () => {
         ].map((project, index) => (
           <div className="box" key={index}>
             <img className="projectimg" src={project.imgSrc} alt={project.title} />
-            <h4 style={{ textAlign: 'left' }}>{project.title}</h4>
+<div className='boxmini'> 
+<h4 style={{ textAlign: 'left' }}>{project.title}</h4>
             <p style={{ textAlign: 'left', opacity: 0.7 }}>{project.description}</p>
             <button className="sourceb">{project.sourceCode}</button>
-          </div>
+        
+   </div>
+  </div>
         ))}
 
 
       </div>
 
       <div className="contact" style={{ opacity: 0, transition: 'opacity 0.5s' }} ref={(el) => (sections.current[4] = el)}>
-        <h3>👾Get in touch ---</h3>
+        <h3>🪙 Get in touch ---</h3>
         <div className="contact_mom">
           <div>
             <a
