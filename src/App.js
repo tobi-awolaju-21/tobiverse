@@ -125,10 +125,10 @@ const App = () => {
         ) : (
           <>
             <h1 style={{ fontFamily: 'BagelFatOne'}}>
-            Hi! I'm <span style={{ color: 'white' }}>Awolaju Tobi</span>
+           <span style={{ color: 'white' }}>Awolaju Tobi</span>
             </h1>
 
-            <h1 style={{ fontFamily: 'BagelFatOne' }}> I ♡ Blockchain and Christ <span  style={{ color: 'white' }}>✞</span> </h1>
+            <h1 style={{ fontFamily: 'BagelFatOne' }}> I love Zk and Christ <span  style={{ color: 'white' }}>🐙</span> </h1>
             <div style={{display:'flex'}}>
             <button onClick={scrollToAbout} className='button_more'>About me</button>
             <button onClick={scrollToAbout} className='button_more'>Writings</button>
