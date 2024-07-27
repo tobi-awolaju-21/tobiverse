@@ -129,7 +129,7 @@ const App = () => {
             </h1>
 
             <h1 style={{ fontFamily: 'BagelFatOne', fontSize: '18px' }}>
-  I enjoy software development <span style={{ color: 'white' }}>🐙</span>
+  Art prodigy and Enjoying Blockchain development and Electronics engineering. <span style={{ color: 'white' }}>🐙</span>
 </h1>
 
 
