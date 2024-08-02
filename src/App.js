@@ -116,30 +116,32 @@ const App = () => {
   return (
     <div>
 
+
       <div className={`splash ${loading ? 'loading' : ''}`}>
+      <div  className="background-div" >
+      </div>
+
         {loading ? (
           <div className="glitch">
             <pre id="ascii-donut"></pre>
 
           </div>
         ) : (
-          <>
+          <div className='glitch2'>
             <h1 style={{ fontFamily: 'BagelFatOne'}}>
            <span style={{ color: 'white' }}>Awolaju Tobi</span>
             </h1>
 
-            <h1 style={{ fontFamily: 'BagelFatOne', fontSize: '18px' }}>
+            <h1 style={{ fontFamily: 'BagelFatOne', fontSize: '18px'}}>
   Art prodigy and Enjoying Blockchain development and Electronics engineering. <span style={{ color: 'white' }}>🐙</span>
 </h1>
 
-
-
-            <div style={{display:'flex'}}>
+ <div style={{display:'flex', textAlign:'center',justifyContent:'center'}}>
             <button onClick={scrollToAbout} className='button_more'>About me</button>
             <button onClick={scrollToAbout} className='button_more'>Writings</button>
          
             </div>
-          </>
+          </div>
         )}
       </div>
 
