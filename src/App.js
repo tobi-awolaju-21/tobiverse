@@ -33,12 +33,12 @@ const App = () => {
   const substack = () => {
     window.open('https://www.substack.com/@kawaiix621', '_blank');
   };
-  const wapcast = () => {
-    window.open('https://www.substack.com/@kawaiix621', '_blank');
+  const warpcast = () => {
+    window.open('https://www.warpcast.com/kawaiix621', '_blank');
   };
 
   const github = () => {
-    window.open('https://www.substack.com/@kawaiix621', '_blank');
+    window.open('https://github.com/tobi-awolaju-21/', '_blank');
   };
 
 
@@ -148,14 +148,11 @@ const App = () => {
             </h1>
 
             <h1 style={{ fontFamily: 'BagelFatOne', fontSize: '18px'}}>
-  Blockchaih Dev | Art Nerd <span style={{ color: 'white' }}> Kawaiix621</span>
+  Blockchain Dev | Art Nerd <span style={{ color: 'white' }}> Kawaiix621</span>
 </h1>
 
  <div style={{display:'flex', textAlign:'center',justifyContent:'center'}}>
-            <button onClick={scrollToAbout} className='button_more'>Know me</button>
-            <button onClick={substack} className='button_more2'>Substack</button>
-            <button onClick={github} className='button_more2'>Github</button>
-            <button onClick={wapcast} className='button_more2'>Wapcast</button>
+            <button onClick={scrollToAbout} className='button_more'>Know More</button>
          
             </div>
           </div>
@@ -183,7 +180,7 @@ const App = () => {
 
 
 <div className="skills" style={{ opacity: 0, transition: 'opacity 0.5s' }} ref={(el) => (sections.current[1] = el)}>
-  <h3>🪙 I Use</h3>
+  <h3>🪙 I Legally Abuse</h3>
   <div className="scroll-container">
     {[...Array(2)].map((_, i) =>
       [
@@ -295,6 +292,10 @@ const App = () => {
               Message me on LinkedIn
             </a>
           </div>
+          <button onClick={substack} className='button_more2'>Substack</button>
+            <button onClick={github} className='button_more2'>Github</button>
+            <button onClick={warpcast} className='button_more2'>Warpcast</button>
+         
           <div className="footies"></div>
         </div>
       </div>

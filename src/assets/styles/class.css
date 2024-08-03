@@ -52,9 +52,9 @@ body {
   border-radius: 10px;
   margin: 5px;
   margin-top: 40px;
-  border: 3px solid #ffffff3f;
+  border: 3px solid #1f00243f;
   background-color: rgba(19, 56, 188, 0); /* Initial transparent background */
-  color: #ffffffa6;
+  color: #000000a6;
   padding: 10px 20px 10px 16px;
   background-size: 350% 100%;
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.38) 50%);
@@ -62,9 +62,9 @@ body {
 }
 
 .button_more2:hover {
-  background-color: rgb(255, 255, 255); /* Change background opacity on hover */
+  background-color: rgb(82, 3, 78); /* Change background opacity on hover */
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.61) 50%);
-  color: #000000;
+  color: #ffffff;
 }
 
 
@@ -152,7 +152,7 @@ li {
  
   
   .glitch {
-    transform: scale(0.8,0.8);
+    transform: scale(0.6,0.6);
   }
   
  
