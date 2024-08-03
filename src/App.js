@@ -29,6 +29,19 @@ const App = () => {
     document.body.style.overflow = 'auto';
   };
 
+
+  const substack = () => {
+    window.open('https://www.substack.com/@kawaiix621', '_blank');
+  };
+  const wapcast = () => {
+    window.open('https://www.substack.com/@kawaiix621', '_blank');
+  };
+
+  const github = () => {
+    window.open('https://www.substack.com/@kawaiix621', '_blank');
+  };
+
+
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
@@ -116,10 +129,12 @@ const App = () => {
   return (
     <div>
 
+     
 
       <div className={`splash ${loading ? 'loading' : ''}`}>
+
       <div  className="background-div" >
-      </div>
+
 
         {loading ? (
           <div className="glitch">
@@ -133,17 +148,21 @@ const App = () => {
             </h1>
 
             <h1 style={{ fontFamily: 'BagelFatOne', fontSize: '18px'}}>
-  Art prodigy and Enjoying Blockchain development and Electronics engineering. <span style={{ color: 'white' }}>🐙</span>
+  Blockchaih Dev | Art Nerd <span style={{ color: 'white' }}> Kawaiix621</span>
 </h1>
 
  <div style={{display:'flex', textAlign:'center',justifyContent:'center'}}>
-            <button onClick={scrollToAbout} className='button_more'>About me</button>
-            <button onClick={scrollToAbout} className='button_more'>Writings</button>
+            <button onClick={scrollToAbout} className='button_more'>Know me</button>
+            <button onClick={substack} className='button_more2'>Substack</button>
+            <button onClick={github} className='button_more2'>Github</button>
+            <button onClick={wapcast} className='button_more2'>Wapcast</button>
          
             </div>
           </div>
         )}
       </div>
+      </div>
+
 
 
       <section className='abouts' ref={aboutRef}>

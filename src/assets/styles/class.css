@@ -16,11 +16,7 @@
 
   }
   
-  @font-face {
-    font-family: "Borel-Regular";  
-    src: url("..//fonts/Borel-Regular.ttf") format("opentype");
 
-  }
   
 
 body {
@@ -34,7 +30,7 @@ body {
 
 
 .button_more {
-  border-radius: 20px;
+  border-radius: 10px;
   margin: 5px;
   margin-top: 40px;
   border: 3px solid #ffffff73;
@@ -47,20 +43,41 @@ body {
 }
 
 .button_more:hover {
-  background-color: rgba(255, 255, 255, 0.5); /* Change background opacity on hover */
+  background-color: rgb(255, 255, 255); /* Change background opacity on hover */
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.61) 50%);
+  color: #000000;
+}
+
+.button_more2 {
+  border-radius: 10px;
+  margin: 5px;
+  margin-top: 40px;
+  border: 3px solid #ffffff3f;
+  background-color: rgba(19, 56, 188, 0); /* Initial transparent background */
+  color: #ffffffa6;
+  padding: 10px 20px 10px 16px;
+  background-size: 350% 100%;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.38) 50%);
+  transition: background-color 0.3s ease, background-image 0.3s ease;
+}
+
+.button_more2:hover {
+  background-color: rgb(255, 255, 255); /* Change background opacity on hover */
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.61) 50%);
   color: #000000;
 }
 
 
 
+
 h1 {
     font-family: "Borel-Regular";
-    font-size:60px;;
+    font-size:30px;;
     color: #ffffff74;
-    margin: 0px;
-    font-family: sans-serif;
+    margin:8px;
+    padding: 8px;
     font-weight: 300;
+
 }
 
 h2 {
@@ -132,21 +149,10 @@ li {
     ; /* Change to desired color after 2 seconds */
   }
   
-  .glitch {
-    position:relative;
-    top:-37.5vh;
-    font-size: 0.6rem;
-    color: #ffffff;
-  }
-  .glitch2{
-    width: 85vw;
-    position:relative;
-    top:-37.5vh;
-  }
+ 
   
-  .glitch::before, .glitch::after {
-    width: 100%;
-    height: 100%;
+  .glitch {
+    transform: scale(0.8,0.8);
   }
   
  
@@ -403,8 +409,10 @@ align-content: center;
 
 /* Default styles for desktop */
 .background-div {
-  position:relative;
-  top:12.5vh;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
   width: 100vh;
   height: 100vh;
   background-image: url('../images/background.png');
@@ -416,8 +424,6 @@ align-content: center;
 /* Styles for mobile */
 @media (max-width: 768px) {
 .background-div {
-  position:relative;
-  top:12.5vh;
   width: 100vw;
   height: 100vw; /* Adjust the height as needed */
 }
