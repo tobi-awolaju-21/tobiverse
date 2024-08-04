@@ -180,7 +180,7 @@ const App = () => {
 
 
 <div className="skills" style={{ opacity: 0, transition: 'opacity 0.5s' }} ref={(el) => (sections.current[1] = el)}>
-  <h3>🪙 I Legally Abuse</h3>
+  <h3>🪙 I Abuse</h3>
   <div className="scroll-container">
     {[...Array(2)].map((_, i) =>
       [
@@ -212,56 +212,35 @@ const App = () => {
       <div className="experience" style={{ opacity: 0, transition: 'opacity 0.5s' }} ref={(el) => (sections.current[2] = el)}>
         <h3>🪙 Experience</h3>
         <ul>
-          <li>Upwork (Freelancer) 2024 - present - work on gender slider</li>
-          <li>SLIDES (Senior Software Engineer) 2024 - present - wrap implementation</li>
-          <li>Game starts (Senior Software Engineer) 2024 - present - catapurt delivery system</li>
-          <li>Lisk Signature (Senior Software Engineer) 2024 - present - worked on dating app for minors</li>
+        <li>OpenSourceDev (Blockchain Dev) 2024 - present - Contributing to OpenSource Repos</li>
+          <li>Upwork (Freelancer) 2022 - present - worked as Bubble plugin Dev.</li>
+          <li>Yapper (Yap yap yap) 2024 - present - Yapping on X, Discord and TG</li>
         </ul>
       </div>
 
       <div className="projects" style={{ opacity: 0, transition: 'opacity 0.5s' }} ref={(el) => (sections.current[3] = el)}>
         <h3>🪙 Projects ---</h3>
         {[
+          
           {
-            title: 'CompilerX',
+            title: 'Web3 Projects',
             imgSrc: axil,
-            description: 'A high-performance compiler designed for modern programming languages, focusing on optimization and speed.',
-            sourceCode: 'Github',
+            description: 'A repo holding all my blockchain projects, 2k users',
+            sourceCode: 'View Projects',
             link: 'http://www.goggle.com'
           },
           {
-            title: 'LangInter',
+            title: 'Bubble io Plugins',
             imgSrc: axil,
-            description: 'A versatile language interpreter supporting multiple scripting languages, aimed at providing a seamless development experience.',
-            sourceCode: 'Try it out',
+            description: '15+ Bubble io plugins wrtten in Vallina JS to help no code devs',
+            sourceCode: 'View Pugins',
             link: 'http://www.goggle.com'
           },
           {
-            title: 'SearchPro',
+            title: 'My Papers',
             imgSrc: axil,
-            description: 'An advanced search engine designed to deliver precise and fast search results using cutting-edge algorithms.',
-            sourceCode: 'Github',
-            link: 'http://www.goggle.com'
-          },
-          {
-            title: 'NFTMarketplace',
-            imgSrc: axil,
-            description: 'A marketplace for creating, buying, and selling NFTs (non-fungible tokens) with features such as auctions, royalties, and cross-chain interoperability.',
-            sourceCode: 'Github',
-            link: 'http://www.goggle.com'
-          },
-          {
-            title: 'DAOPlatform',
-            imgSrc: axil,
-            description: 'A platform for creating and managing Decentralized Autonomous Organizations (DAOs) with voting mechanisms, treasury management, and proposal tracking.',
-            sourceCode: 'Gthub',
-            link: 'http://www.goggle.com'
-          },
-          {
-            title: 'BlockchainIdentity',
-            imgSrc: axil,
-            description: 'A decentralized identity verification system leveraging blockchain to provide secure and verifiable digital identities.',
-            sourceCode: 'Github',
+            description: 'Some CS research Papers I published',
+            sourceCode: 'Access Papers',
             link: 'http://www.goggle.com'
           }
         ].map((project, index) => (
